@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path:`.env.development`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `LearnCodeOnline YouTube Project`,
@@ -26,12 +30,17 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+        resolve: 'gatsby-plugin-snipcart',
+        options: {
+          apiKey: process.env.SNIPCART_KEY,
+          autopop:true
+      },
 
     },
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `your_space_id`,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.app/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         downloadLocal: true,

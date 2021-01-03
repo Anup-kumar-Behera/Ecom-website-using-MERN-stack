@@ -24,12 +24,12 @@ export default function DualInfoblock({heading, imgSrc}) {
                         </p>
                     </div>
                     <div className="col-4">
-                        <div class="card bg-dark">
+                        <div className="card bg-dark">
                             <img src={imgSrc}
-                            class="card-img-top" alt="image goes here"/>
-                            <div class="card-body">
-                                <h5 class="card-title text-white">Just click photos</h5>
-                                <p class="card-text text-white">
+                            className="card-img-top" alt="image goes here"/>
+                            <div className="card-body">
+                                <h5 className="card-title text-white">Just click photos</h5>
+                                <p className="card-text text-white">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been the
                                 industry's standard dummy text ever since the 1500s,
@@ -39,7 +39,7 @@ export default function DualInfoblock({heading, imgSrc}) {
                                 into electronic typesetting, remaining essentially 
                                 unchanged.
                                 </p>
-                                <Link to="#" class="btn btn-warning btn-block">
+                                <Link to="#" className="btn btn-warning btn-block">
                                     {heading}
                                 </Link>
                             </div>
