@@ -14,16 +14,14 @@ import SEO from "../components/seo"
 
 const AboutPage = ({data}) => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="Home" />
     <HeroSection
       img={data.img.childImageSharp.fluid}
-      title="About LearnCode Online"
+      title="Contact Us"
       subtitle=""
       heroclass="about-background"
     />
-    <DualInfoblock heading="A message from CEO"/> 
-    <Infoblock heading="About Our Vision"/>
-    <TeamPhotoSection />
+    <Infoblock heading="How can we help?"/>
   </Layout>
 )
 

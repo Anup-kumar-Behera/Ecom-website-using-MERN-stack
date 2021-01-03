@@ -12,9 +12,9 @@ import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
 
-const AboutPage = ({data}) => (
+const ContactPage = ({data}) => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="Home" />
     <HeroSection
       img={data.img.childImageSharp.fluid}
       title="About LearnCode Online"
@@ -29,7 +29,7 @@ const AboutPage = ({data}) => (
 
 export const query = graphql`
 {
-  img: file(relativePath: { eq: "about.png"}){
+  img: file(relativePath: { eq: "contact.png"}){
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_tracedSVG
@@ -39,4 +39,4 @@ export const query = graphql`
 }
 `
 
-export default AboutPage
+export default ContactPage
