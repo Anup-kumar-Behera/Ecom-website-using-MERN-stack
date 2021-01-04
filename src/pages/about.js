@@ -16,9 +16,13 @@ const AboutPage = ({data}) => (
       subtitle=""
       heroclass="about-background"
     />
+<<<<<<< HEAD
     <DualInfoblock heading="A message from CEO"/>
     <Infoblock heading="About Vision"/>
     <TeamPhotoSection/>
+=======
+    <Infoblock heading="How can we help?"/>
+>>>>>>> e4299562f3925a13b256e9b90020304a30436bf0
   </Layout>
 )
 
