@@ -5,7 +5,7 @@ import Infoblock from '../components/reusable/infoblock'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import Contact from '../components/Contact/contact'
 const ContactPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
@@ -16,6 +16,7 @@ const ContactPage = ({data}) => (
       heroclass="about-background"
     />
     <Infoblock heading="How can we help?"/>
+    <Contact/>
   </Layout>
 )
 
